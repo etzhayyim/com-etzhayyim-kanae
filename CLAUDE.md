@@ -86,7 +86,7 @@ boundaries are structural and constitutional:
 
 ## Architecture
 
-5 Pregel cells, each path-reserved at R0 under `40-engine/kotoba/crates/kotoba-kotodama/cells/kanae_*/`:
+5 Pregel cells, each path-reserved at R0 under `kotoba-lang/kotodama-cells/kanae_*/`:
 
 ```
 flow_assembler ──┐
