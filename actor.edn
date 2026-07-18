@@ -1,0 +1,4 @@
+{:did "did:web:etzhayyim.github.io:com-etzhayyim-kanae"
+ :handle "kanae.etzhayyim.com" :ipns-key "kanae-actor"
+ :graph-type "com.etzhayyim.kanae.graph" :published "2026-07-18"
+ :bundle [["data" "data"] ["wire/identity/did.json" "did.json"] ["README.md" "README.md"]]}

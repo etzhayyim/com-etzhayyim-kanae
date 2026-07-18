@@ -1,0 +1,31 @@
+{
+  "did": "did:web:etzhayyim.com:actor:kanae",
+  "handle": "kanae.etzhayyim.com",
+  "displayName": "Kanae — Government Fiscal-Flow Visualization",
+  "description": "Aggregates public fundFlowEdges (appropriation→outlay→recipient + inter-governmental transfers) into kotoba EAVT and renders aggregate-first, NON-adjudicating summaries (danjo finds, kanae renders).",
+  "avatar": "",
+  "banner": "",
+  "followersCount": 0,
+  "followsCount": 0,
+  "postsCount": 0,
+  "indexedAt": "2026-06-01T00:00:00.000Z",
+  "labels": [],
+  "viewer": {},
+  "performerType": "system",
+  "uiType": "appview",
+  "glyph": "鼎",
+  "displayNameJa": "鼎 — 政府資金フロー可視化",
+  "_etzhayyim": {
+    "kind": "tier-b",
+    "tier": "B",
+    "status": "r0",
+    "adr": [
+      "2605302300",
+      "2606272355"
+    ],
+    "primaryLexicon": "com.etzhayyim.kanae",
+    "primarySchema": null,
+    "didDocument": "https://etzhayyim.com/actor/kanae/did.json",
+    "source": "kotoba"
+  }
+}

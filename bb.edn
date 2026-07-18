@@ -1,0 +1,10 @@
+{:paths ["src" "test"] :deps {cheshire/cheshire {:mvn/version "5.13.0"}}
+ :tasks {test {:requires ([clojure.test] [kanae.methods.test-assemble-flows]
+                          [kanae.methods.test-charter-gates] [kanae.methods.test-methods]
+                          [kanae.methods.test-net-flows] [kanae.methods.test-project-yoro]
+                          [kanae.murakumo-test])
+               :task (let [r (clojure.test/run-tests 'kanae.methods.test-assemble-flows
+                              'kanae.methods.test-charter-gates 'kanae.methods.test-methods
+                              'kanae.methods.test-net-flows 'kanae.methods.test-project-yoro
+                              'kanae.murakumo-test)]
+                       (when (pos? (+ (:fail r) (:error r))) (throw (ex-info "kanae tests failed" r))) r)}}}

@@ -1,0 +1,7 @@
+{:catalog/version 1 :catalog/canonical-format :edn :actor :kanae
+ :contracts [{:name :flow-narrative :canonical/path "contracts/lexicons/flowNarrative.edn" :wire/path "wire/contracts/lexicons/flowNarrative.json"}
+             {:name :fund-flow-edge :canonical/path "contracts/lexicons/fundFlowEdge.edn" :wire/path "wire/contracts/lexicons/fundFlowEdge.json"}
+             {:name :method-note :canonical/path "contracts/lexicons/methodNote.edn" :wire/path "wire/contracts/lexicons/methodNote.json"}
+             {:name :visualization-manifest :canonical/path "contracts/lexicons/visualizationManifest.edn" :wire/path "wire/contracts/lexicons/visualizationManifest.json"}]
+ :identity [{:kind :did-document :wire/path "wire/identity/did.json"}
+            {:kind :actor-profile :wire/path "wire/identity/profile.json"}]}

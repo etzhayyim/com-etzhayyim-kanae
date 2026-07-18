@@ -1,26 +1,6 @@
 (ns kanae.methods.test-methods
-  "babashka tests for kanae.methods.assemble-flows and kanae.methods.project-yoro.
-  Run: bb --classpath 20-actors 20-actors/kanae/methods/test_methods.clj
-
-  Fixture strategy: hand-built minimal ledger whose structure matches the real seed ledger
-  (captured from python3 on gov-fiscal-seed.jp.json), plus a representative subset of expected
-  outputs cross-checked against python3 on identical inputs.
-
-  Python oracle cmd used for verification:
-    cd /tmp/clj-supply4 && python3 -c '
-      import sys, json; sys.path.insert(0,\"20-actors\")
-      from danjo.methods.budget_ledger import build_ledger, load_seed
-      from kanae.methods.assemble_flows import assemble
-      from kanae.methods.project_yoro import project
-      SEED=\"20-actors/danjo/data/gov-fiscal-seed.jp.json\"
-      ledger=build_ledger(load_seed(SEED))
-      edges=assemble(ledger)
-      print(len(edges), \"edges\")
-      print(json.dumps(edges, ensure_ascii=False))
-      datoms=project(edges)
-      print(len(datoms), \"datoms\")
-      print(json.dumps(datoms, ensure_ascii=False))
-    '")
+  "Standalone tests for flow assembly and Yoro projection using a captured,
+  deterministic fiscal fixture.")
 
 (require '[clojure.test :refer [deftest is testing run-tests]])
 (require '[clojure.string :as str])

@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; kanae 鼎 — tests for the per-endpoint fiscal net-flow aggregate.
-;; Run:  bb --classpath 20-actors 20-actors/kanae/methods/test_net_flows.cljc
+;; Run as part of the standalone `bb test` suite.
 (ns kanae.methods.test-net-flows
   "Tests for net-flows — the per-endpoint fiscal flow balance (inflow − outflow) over the assembled
   fundFlowEdges. A non-adjudicating aggregate (G4 — a sum of disclosed amounts, no verdict) over
